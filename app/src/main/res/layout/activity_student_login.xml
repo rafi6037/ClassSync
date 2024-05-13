@@ -99,20 +99,60 @@ tools:context=".StudentLogin">
     >
 </TextView>
 
-<TextView
+<LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:paddingStart="20dp"
+    android:layout_gravity="center"
     android:layout_marginTop="30dp"
-    android:text="Section Key:"
-    android:textColor="@color/white"
-    android:fontFamily="@font/sgb"
-    android:textSize="15dp"></TextView>
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Section key"
-    android:textColor="@color/white"></EditText>
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section Key:"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sgb">
+
+    </TextView>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Example: 61_E"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/sgl"
+        android:background="@drawable/rounded_input_background">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sgb">
+
+    </TextView>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Example:123456"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/sgl"
+        android:background="@drawable/rounded_input_background">
+    </EditText>
+    <Button
+        android:id="@+id/studentLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Assign me to Section"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/sgb"></Button>
+</LinearLayout>
 
 
 

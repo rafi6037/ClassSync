@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello "
+                android:text="Welcome to "
                 android:fontFamily="@font/sgb"
                 android:textColor="@color/white"
                 android:textSize="24dp"
@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Anonymous!"
+                android:text="ClassSync"
                 android:textColor="@color/primary"
                 android:textSize="24dp"
                 android:fontFamily="@font/sgb"
@@ -45,18 +45,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome to  "
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
                 android:textColor="@color/white"
-                android:textSize="24dp"
+                android:textSize="13sp"
+                android:paddingEnd="25dp"
                 android:fontFamily="@font/sgb"></TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ClassSync."
-                android:textColor="@color/primary"
-                android:fontFamily="@font/sgb"
-                android:textSize="24dp"
-                ></TextView>
         </LinearLayout>
     </LinearLayout>
 
@@ -67,23 +60,22 @@
         android:layout_marginTop="40dp"
         android:paddingStart="25dp"
         android:paddingEnd="40dp"
-        android:textSize="16dp"
-        android:fontFamily="@font/sgr"
+        android:textSize="18dp"
+        android:fontFamily="@font/sgb"
         android:textColor="@color/white"
-        android:text="We're excited to have you on board. It seems like you haven't been assigned to any section yet."
-        >
+        android:text="Please select your role to continue:">
     </TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="25dp"
         android:paddingEnd="40dp"
-        android:paddingTop="10dp"
-        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:textSize="18dp"
         android:fontFamily="@font/sgr"
         android:textColor="@color/white"
-        android:text="To get started, please contact your Class CR (Class Representative) for the Section Key and Password. Once assigned, you'll be able to access your section's resources and participate in activities."
-        >
+        android:text="- General Student: Access course materials, announcements, and resources. View quizzes, assignments, presentations, and announcements.
+">
     </TextView>
 
     <TextView
@@ -92,28 +84,44 @@
         android:paddingStart="25dp"
         android:paddingEnd="40dp"
         android:paddingTop="10dp"
-        android:textSize="16dp"
-        android:textColor="@color/primary"
+        android:textSize="18dp"
+        android:textColor="@color/white"
         android:fontFamily="@font/sgr"
-        android:text="If you already have the Section Key and Password, please enter them below to get assigned."
-        >
+        android:text="- Class Representative: Manage your class section, create announcements, manage resources, and communicate with classmates.">
     </TextView>
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Section Key:"
-        android:textColor="@color/white"
-        android:fontFamily="@font/sgb"
-        android:textSize="15dp"></TextView>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Section key"
-        android:textColor="@color/white"></EditText>
-
-
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Student"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sgm"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button_background">
+        </Button>
+        <Button
+            android:id="@+id/cr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Student"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:paddingStart="50dp"
+            android:fontFamily="@font/sgm"
+            android:paddingEnd="50dp"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button_background">
+        </Button>
+    </LinearLayout>
 
 </LinearLayout>

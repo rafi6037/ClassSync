@@ -1,19 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1244"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ellipse_1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello "
+                android:fontFamily="@font/sgb"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anonymous!"
+                android:textColor="@color/primary"
+                android:textSize="24dp"
+                android:fontFamily="@font/sgb"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to  "
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:fontFamily="@font/sgb"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ClassSync."
+                android:textColor="@color/primary"
+                android:fontFamily="@font/sgb"
+                android:textSize="24dp"
+                ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="40dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/sgr"
+        android:textColor="@color/white"
+        android:text="We're excited to have you on board. It seems like you haven't been assigned to any section yet."
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="10dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/sgr"
+        android:textColor="@color/white"
+        android:text="To get started, please contact your Class CR (Class Representative) for the Section Key and Password. Once assigned, you'll be able to access your section's resources and participate in activities."
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/sgr"
+        android:text="If you already have the Section Key and Password, please enter them below to get assigned."
+        >
+    </TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Section Key:"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sgb"
+        android:textSize="15dp"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Section key"
+        android:textColor="@color/white"></EditText>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

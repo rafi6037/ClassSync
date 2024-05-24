@@ -10,29 +10,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-
-    Button gs,cr;
-
+public class CreateSection extends AppCompatActivity {
+    Button createSection;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-
-        gs = findViewById(R.id.gs);
-        cr = findViewById(R.id.crlogin);
-
-        gs.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, StudentLogin.class);
+        setContentView(R.layout.activity_create_section);
+        createSection = findViewById(R.id.createSection);
+        createSection.setOnClickListener(v -> {
+            Intent intent = new Intent(CreateSection.this,SDashboard.class);
             startActivity(intent);
         });
-
-        cr.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, CRLogin.class);
-            startActivity(intent);
-        });
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
